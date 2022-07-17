@@ -1,0 +1,112 @@
+
+.portfolio {
+
+
+    &__container {
+    }
+    &__body {
+        padding: 90px 0 45px;
+        @media (min-width: 991px) {
+            display: flex;
+            align-items: center;
+            column-gap: 175px;
+        }
+    }
+    &__content {
+        @media (min-width: 991px) {
+            flex-basis: 905px;
+        }
+    }
+    &__image {
+        @media (max-width: 991px) {
+            display: flex;
+            justify-content: center;
+            margin-top: 25px;
+        }
+    }
+    &__title {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: clamp(30px, 3.152vw, 50.6352px);
+        line-height: 122%;
+        color: #000000;
+        margin-bottom: 30px;
+    }
+    &__subtitle {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: clamp(20px, 1.758vw, 29.8059px);
+        line-height: 124%;
+        color: #494949;
+        margin-bottom: 25px;
+    }
+    &__items {
+    }
+    &__item {
+    }
+    &__link {
+        margin-top: 65px;
+        background: #1346CC;
+        border-radius: 9px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: clamp(18px, 1.576vw, 26.6311px);
+        line-height: 123%;
+        color: #FFFFFF;
+        padding: 23px 77px;
+        @media (max-width: 991px) {
+            width: 100%;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            margin-top: 30px;
+        }
+    }
+}
+
+.item-portfolio {
+
+    display: flex;
+    align-items: center;
+    column-gap: 45px;
+
+    @media (max-width: 768px) {
+        column-gap: 20px;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 25px;
+    }
+    &__image {
+        & svg {
+            @media (max-width: 768px) {
+                width: 100px;
+            }
+            @media (max-width: 454px) {
+                width: 80px;
+            }
+        }
+    }
+    &__content {
+    }
+    &__title {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: clamp(26px, 2.182vw, 36.168px);
+        line-height: 122%;
+        color: #000000;
+        margin-bottom: 14px;
+    }
+    &__text {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: clamp(15px, 1.394vw, 23.5092px);
+        line-height: 121%;
+        color: #494949;
+    }
+}
