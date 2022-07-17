@@ -11,6 +11,21 @@ if (document.querySelector('.main-slider')) {
             nextEl: '.slider .slider-next',
             prevEl: '.slider .slider-prev',
         },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        on: {
+            init() {
+                this.el.addEventListener('mouseenter', () => {
+                    this.autoplay.stop();
+                });
+
+                this.el.addEventListener('mouseleave', () => {
+                    this.autoplay.start();
+                });
+            }
+        },
         breakpoints: {
             320: {
                 slidesPerView: 1,

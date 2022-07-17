@@ -24,10 +24,12 @@ testWebP(function (support) {
 
 
 // buger
+let html = document.documentElement;
 let burgerBtns = [...document.querySelectorAll(".burger")];
 for (const burgerBtn of burgerBtns) {
     burgerBtn.addEventListener("click", function () {
         body.classList.toggle("active");
+        html.classList.toggle("active");
     });
 }
 //  \\\
