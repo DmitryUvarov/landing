@@ -153,3 +153,4 @@ const start = gulp.series(server);
 exports.build = build;
 exports.default = build;
 exports.start = start;
+exports.sprite = sprite;

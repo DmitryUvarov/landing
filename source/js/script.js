@@ -1,5 +1,6 @@
 //@@include('sliders.js');
-//@@include('sliders.js');
+//@@include('app/spoller.js');
+//@@include('app/dynamic_adapt.js');
 
 
 const body = document.body;
@@ -20,19 +21,6 @@ testWebP(function (support) {
 });
 //  \\\
 
-
-
-// fixed header
-let header = document.querySelector("header");
-window.addEventListener("scroll", () => {
-    let scrollTop = window.scrollY;
-    if (scrollTop >= 1) {
-        header.classList.add("fixed");
-    } else if (scrollTop <= 0) {
-        header.classList.remove("fixed");
-    }
-});
-//  \\\
 
 
 // buger

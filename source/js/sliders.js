@@ -1,41 +1,33 @@
 
-if (document.querySelector('.slider')) {
-    new Swiper('.slider', {
+if (document.querySelector('.main-slider')) {
+    new Swiper('.main-slider', {
         observer: true,
         observerParents: true,
-        slidesPerView: 3,
-        spaceBetween: 30,
         watchOverflow: true,
         speed: 800,
-        loop: true,
         watchOverflow: true,
-        // Dotts
-        pagination: {
-            el: '.slider',
-            clickable: true,
-        },
-        // Arrows
+
         navigation: {
-            nextEl: '.slider .slider-arrow_next',
-            prevEl: '.slider .slider-arrow_prev',
+            nextEl: '.slider .slider-next',
+            prevEl: '.slider .slider-prev',
         },
-        /*
         breakpoints: {
-            // when window width is >= 320px
             320: {
-                slidesPerView: 1.1,
+                slidesPerView: 1,
                 spaceBetween: 15
             },
-            // when window width is >= 768px
             768: {
-                slidesPerView: 2,
-                spaceBetween: 20
+                slidesPerView: 1.5,
+                spaceBetween: 15
             },
-            // when window width is >= 992px
-            992: {
+            991: {
+                slidesPerView: 2,
+                spaceBetween: 15
+            },
+            1650: {
                 slidesPerView: 3,
-                spaceBetween: 32
+                spaceBetween: 15
             }
-        }*/
+        }
     });
 }

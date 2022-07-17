@@ -1,0 +1,43 @@
+.numbers {
+
+
+    &__container {
+    }
+    &__body {
+        padding: 100px 0;
+        display: grid;
+        grid-template-columns: repeat(4, max-content);
+        column-gap: 166px;
+
+        @media (max-width: 1650px) {
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 60px;
+        }
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 40px;
+            padding: 50px 0;
+        }
+    }
+    &__item {
+    }
+    &__title {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: clamp(34px, 3.394vw, 56px);
+        line-height: 121%;
+        color: #000000;
+        margin-bottom: 17px;
+
+    }
+    &__text {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: clamp(20px, 1.394vw, 23px);
+        line-height: 121%;
+        color: #464646;
+
+    }
+}
