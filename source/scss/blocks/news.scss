@@ -1,0 +1,19 @@
+.news {
+    background: #F2F5FF;
+
+    &__container {
+    }
+    &__body {
+        padding: 100px 0 90px;
+    }
+    &__title {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 121%;
+        text-align: center;
+        color: #000000;
+
+    }
+}
