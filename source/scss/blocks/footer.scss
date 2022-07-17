@@ -2,6 +2,12 @@
 
     background-color: #0F204C;
     padding: 90px 0;
+    @media (max-width: 991px) {
+        padding: 70px 0;
+    }
+    @media (max-width: 767px) {
+        padding: 40px 0 30px;
+    }
     &__container {
 
     }
@@ -15,11 +21,16 @@
         column-gap: 75px;
         row-gap: 25px;
 
-        @media (max-width: 1240px) {
-        grid-template-areas:
-        "a ."
-        "b ."
-        "c c";
+        @media (max-width: 1650px) {
+            grid-template-columns: 1fr;
+            row-gap: 35px;
+            grid-template-areas:
+            "a"
+            "b"
+            "c";
+        }
+        @media (max-width: 991px) {
+            row-gap: 20px;
         }
     }
     &__logo {
@@ -34,6 +45,10 @@
             width: 68.45px;
             height: 75.3px;
             mask-image: var(--logoFooter);
+
+            @media (max-width: 767px) {
+                zoom: 0.8;
+            }
         }
         & span {
             display: block;
@@ -41,7 +56,7 @@
             font-family: 'Inter';
             font-style: normal;
             font-weight: 700;
-            font-size: 46.0622px;
+            font-size: clamp(34px, 2.788vw, 46.0622px);
             line-height: 121%;
             background: linear-gradient(140.46deg, #0046FF 8.34%, #2C66FF 35.96%, #0046FF 63.58%, #2C66FF 100.06%), #FFFFFF;
             -webkit-background-clip: text;
@@ -61,8 +76,7 @@
         color: #FFFFFF;
 
         @media (max-width: 991px) {
-            margin-top: 15px;
-
+            max-width: 360px;
         }
     }
     &__menu {
@@ -74,18 +88,18 @@
     grid-area: c;
     display: grid;
     grid-template-columns: repeat(4, max-content);
-    column-gap: 76px;
+    column-gap: 65px;
 
     @media (max-width: 1240px) {
         column-gap: 35px;
         margin-top: 30px;
     }
-    @media (max-width: 1240px) {
+    @media (max-width: 767px) {
         grid-template-columns: repeat(2, 1fr);
         row-gap: 30px;
         column-gap: 35px;
     }
-    @media (max-width: 767px) {
+    @media (max-width: 600px) {
         grid-template-columns: repeat(1, 1fr);
         column-gap: 35px;
     }
