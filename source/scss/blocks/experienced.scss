@@ -1,0 +1,95 @@
+.experienced {
+
+
+    &__container {
+        max-width: 1560px;
+    }
+    &__body {
+        padding: 45px 0 80px 0;
+    }
+    &__title {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: clamp(32px, 3.394vw, 56px);
+        line-height: 121%;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 28px;
+    }
+    &__subtitle {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: clamp(18px, 1.818vw, 30px);
+        line-height: 120%;
+        color: #494949;
+        text-align: center;
+
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 105px;
+        margin-top: 55px;
+
+        @media (max-width: 991px) {
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 35px;
+            column-gap: 40px;
+        }
+        @media (max-width: 600px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    &__item {
+
+    }
+
+}
+
+.item-experienced {
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 991px) {
+        &:first-child {
+            grid-column: 1 / -1;
+        }
+    }
+    &__title {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: clamp(20px, 1.818vw, 30.5648px);
+        line-height: 123%;
+        color: #000000;
+        text-align: center;
+    }
+    &__num {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 900;
+        font-size: clamp(45px, 6.606vw, 109.248px);
+        line-height: 121%;
+        text-align: center;
+
+        background: linear-gradient(113.75deg, #002588 8.47%, #4A7CFF 48.47%, #002588 94.76%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        margin-bottom: 8px;
+
+    }
+    &__text {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: clamp(16px, 1.515vw, 25.3524px);
+        line-height: 125%;
+        text-align: center;
+        color: #494949;
+    }
+
+}

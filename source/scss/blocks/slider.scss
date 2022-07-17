@@ -8,6 +8,11 @@
     }
     &__body {
         position: relative;
+        padding: 0 0 90px 0;
+
+        @media (max-width: 768px) {
+            padding: 0 0 45px 0;
+        }
     }
 
     &__control {
