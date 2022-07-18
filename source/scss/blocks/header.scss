@@ -32,7 +32,8 @@ body.active {
 
 
     &__container {
-        max-width: 1890px;
+        max-width: 1890px !important;
+
     }
     &__body {
         display: flex;

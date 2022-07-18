@@ -31,12 +31,16 @@ if (document.querySelector('.main-slider')) {
                 slidesPerView: 1,
                 spaceBetween: 15
             },
-            768: {
+            550: {
                 slidesPerView: 1.5,
                 spaceBetween: 15
             },
-            991: {
+            768: {
                 slidesPerView: 2,
+                spaceBetween: 15
+            },
+            991: {
+                slidesPerView: 2.7,
                 spaceBetween: 15
             },
             1650: {
