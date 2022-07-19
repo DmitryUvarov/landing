@@ -9,7 +9,11 @@
         grid-template-columns: repeat(4, max-content);
         column-gap: 166px;
 
-        @media (max-width: 1650px) {
+        @media (max-width: 1750px) {
+            column-gap: 40px;
+            justify-content: space-between;
+        }
+        @media (max-width: 991px) {
             grid-template-columns: repeat(2, 1fr);
             row-gap: 60px;
         }
@@ -30,6 +34,10 @@
         color: #000000;
         margin-bottom: 17px;
 
+        @media (max-width: 1750px) {
+            font-size: 39px
+        }
+
     }
     &__text {
         font-family: 'Inter';
@@ -38,6 +46,8 @@
         font-size: clamp(20px, 1.394vw, 23px);
         line-height: 121%;
         color: #464646;
-
+        @media (max-width: 1750px) {
+            font-size: 18px;
+        }
     }
 }
