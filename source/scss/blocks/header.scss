@@ -91,7 +91,9 @@ body.active {
         &:not(:last-child) {
             margin-right: 25px;
         }
-
+        border: 1px solid #1346cc;
+        padding: 12px 29px;
+        border-radius: 9px;
         &.blue {
             background: #1346CC;
             border-radius: 9px;
@@ -103,7 +105,7 @@ body.active {
             text-align: center;
             &:not(:last-child) {
                 margin-right: 0;
-                margin-bottom: 25px;
+                margin-bottom: 15px;
             }
         }
     }
@@ -159,12 +161,15 @@ body.active {
         overflow: auto;
         background: #fff;
         z-index: 99;
-        padding: 100px 30px 100px;
+        padding: 130px 30px 100px;
         transition: right .3s ease;
     }
 
     @media (min-width: 991px) and (max-width: 1350px) {
         width: 400px;
+    }
+    @media (max-width: 991px) {
+        padding: 110px 30px 100px;
     }
     @media (max-width: 768px) {
         width: 85%;
@@ -203,7 +208,7 @@ body.active {
             transition: color .3s ease;
 
             @media (max-width: 1350px) {
-                font-size: 30px;
+                font-size: 16px;
             }
 
             & svg {
@@ -256,8 +261,8 @@ body.active {
             }
         }
         @media (max-width: 1350px) {
-            padding-left: 25px;
-            padding-top: 20px;
+            padding-left: 15px;
+            padding-top: 10px;
         }
     }
     &__subitem {
@@ -266,7 +271,7 @@ body.active {
         }
         & a {
             @media (max-width: 1350px) {
-                font-size: 25px;
+                font-size: 15px;
             }
         }
         @media (any-hover: hover) {
@@ -335,5 +340,58 @@ body.active {
                     bottom: 0;
                 }
             }
+    }
+}
+
+.hide-to1350 {
+    @media (min-width: 1350px) {
+        display: none;
+    }
+}
+
+.trading-competition {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 10px;
+    margin-top: 20px;
+
+    & span {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        line-height: 121%;
+        font-size: 16px;
+    }
+
+
+    &.new {
+        &::before {
+            content: 'new';
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            line-height: 121%;
+            font-size: 12px;
+            display: block;
+            background: #F0B90B;
+            border-radius: 4px;
+            padding: 1px 4px;
+            align-self: end;
+        }
+    }
+}
+.help {
+    @media (max-width: 600px) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        column-gap: 10px;
+        margin-top: 20px;
+        & span {
+            margin: 0;
+            font-size: 16px;
+        }
     }
 }
